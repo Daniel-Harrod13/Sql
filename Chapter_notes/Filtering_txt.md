@@ -57,7 +57,9 @@ To filter based on multiple conditions or a range of numbers, you can use the OR
 
 ```sql
 -- Example: Select film titles released in 1920, 1930, or 1940
-SELECT title FROM films WHERE release_year = 1920 OR release_year = 1930 OR release_year = 1940;
+SELECT title 
+FROM films 
+WHERE release_year = 1920 OR release_year = 1930 OR release_year = 1940;
 ```
 
 ## Filtering with WHERE and IN
