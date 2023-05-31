@@ -19,7 +19,9 @@ The LIKE operator is used with the WHERE clause to search for a pattern in a tex
 
 ```sql
 -- Example: Match names starting with "Ad"
-SELECT * FROM people WHERE name LIKE 'Ad%';
+SELECT * 
+FROM people 
+WHERE name LIKE 'Ad%';
 
 -- Example: Match three-letter names ending with "e"
 SELECT * 
