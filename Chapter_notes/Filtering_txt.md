@@ -22,7 +22,9 @@ The LIKE operator is used with the WHERE clause to search for a pattern in a tex
 SELECT * FROM people WHERE name LIKE 'Ad%';
 
 -- Example: Match three-letter names ending with "e"
-SELECT * FROM people WHERE name LIKE '__e';
+SELECT * 
+FROM people 
+WHERE name LIKE '__e';
 ```
 
 ## NOT LIKE Operator
@@ -30,7 +32,9 @@ The NOT LIKE operator is used to find records that do not match the specified pa
 
 ```sql
 -- Example: Find records without "A." in the first name
-SELECT * FROM people WHERE name NOT LIKE 'A.%';
+SELECT * 
+FROM people 
+WHERE name NOT LIKE 'A.%';
 ```
 
 ## Wildcard Position
@@ -38,10 +42,14 @@ Wildcards can be placed anywhere and combined to search for values that start, e
 
 ```sql
 -- Example: Find names ending with "r"
-SELECT * FROM people WHERE name LIKE '%r';
+SELECT * 
+FROM people 
+WHERE name LIKE '%r';
 
 -- Example: Find records where the third character is "t"
-SELECT * FROM people WHERE name LIKE '__t%';
+SELECT * 
+FROM people 
+WHERE name LIKE '__t%';
 ```
 
 ## Filtering with WHERE and OR
@@ -57,7 +65,9 @@ The IN operator allows specifying multiple values in the WHERE clause, simplifyi
 
 ```sql
 -- Example: Find film titles with associated country as Germany or France
-SELECT title FROM films WHERE country IN ('Germany', 'France');
+SELECT title 
+FROM films 
+WHERE country IN ('Germany', 'France');
 ```
 
-Feel free to use this note page as a reference for your class project. Modify it according to your needs and add more examples as required.
+
