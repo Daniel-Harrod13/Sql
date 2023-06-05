@@ -12,11 +12,3 @@ The repository contains the following:
 
 
 
-## Contact
-
-If you have any questions or feedback regarding this repository, please feel free to reach out to me. You can contact me through the following channels:
-
-- Email: [your-email@example.com](mailto:your-email@example.com)
-- Twitter: [@your-username](https://twitter.com/your-username)
-
-Thank you for visiting my SQL repository! Happy coding and exploring the world of SQL!
