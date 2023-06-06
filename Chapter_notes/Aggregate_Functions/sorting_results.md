@@ -1,5 +1,3 @@
-Chapter 1: Sorting Results
-
 ## Overview
 In this chapter, we will learn about sorting results in SQL to gain further insight into our data. Sorting allows us to put our data in a specific order, making it easier to understand and analyze. We will explore the ORDER BY keyword, sorting in ascending and descending order, sorting by multiple fields, and the order of execution.
 
