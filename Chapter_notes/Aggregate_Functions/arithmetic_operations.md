@@ -52,3 +52,31 @@ In SQL, the order of execution is important when using aliases. The `FROM` and `
 If you need to filter or conditionally aggregate based on an alias, you can use a subquery or a derived table. These constructs allow you to first create the alias in the inner query and then refer to it in the outer query.
 
 Overall, understanding the order of execution and properly using aliases can help in creating more readable and efficient SQL queries.
+
+
+
+To find the number of decades covered by the films table using `MIN()` and `MAX()` functions and alias it as `number_of_decades`, you can follow this SQL query:
+
+```sql
+SELECT 
+  (MAX(release_year) - MIN(release_year)) / 10 AS number_of_decades
+FROM films;
+```
+
+In this query, `MAX(release_year)` retrieves the maximum release year from the films table, `MIN(release_year)` retrieves the minimum release year, and `(MAX(release_year) - MIN(release_year)) / 10` calculates the difference between the maximum and minimum release years in terms of decades. The result is then aliased as `number_of_decades`.
+
+Executing this query will give you the number of decades covered by the films table.
+
+
+
+
+Your query to round `duration_hours` to two decimal places looks correct. By dividing `duration` by 60.0 and aliasing it as `duration_hours`, you have transformed the duration from minutes to hours. To round it to two decimal places, you can use the `ROUND` function. Here's an updated version of your query:
+
+```sql
+SELECT title, ROUND(duration / 60.0, 2) AS duration_hours
+FROM films;
+```
+
+In this query, the `ROUND` function is used to round the `duration / 60.0` expression to two decimal places. The result will be the `duration_hours` column, which contains the rounded duration values.
+
+Make sure to replace `films` with the actual name of your table and adjust other column names as necessary.
