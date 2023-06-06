@@ -66,5 +66,23 @@ FROM films;
 
 Please note that the ROUND() function can only be used with numerical fields.
 
-## Conclusion
-By combining our filtering skills with aggregate functions and utilizing the WHERE clause, we can summarize subsets of data based on specific conditions. Additionally, we can use the ROUND() function to round numerical values to a specified decimal place for better presentation or precision. These techniques allow us to extract meaningful insights from our data and answer more targeted questions about our dataset.
+To find the number of decades covered by the films table using `MIN()` and `MAX()` functions and alias it as `number_of_decades`, you can follow this SQL query:
+
+```sql
+SELECT 
+  (MAX(release_year) - MIN(release_year)) / 10 AS number_of_decades
+FROM films;
+```
+
+In this query, `MAX(release_year)` retrieves the maximum release year from the films table, `MIN(release_year)` retrieves the minimum release year, and `(MAX(release_year) - MIN(release_year)) / 10` calculates the difference between the maximum and minimum release years in terms of decades. The result is then aliased as `number_of_decades`.
+
+Executing this query will give you the number of decades covered by the films table.
+
+```sql
+SELECT title, ROUND(duration / 60.0, 2) AS duration_hours
+FROM films;
+```
+
+In this query, the `ROUND` function is used to round the `duration / 60.0` expression to two decimal places. The result will be the `duration_hours` column, which contains the rounded duration values.
+
+Make sure to replace `films` with the actual name of your table and adjust other column names as necessary.
